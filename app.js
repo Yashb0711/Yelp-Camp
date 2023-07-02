@@ -93,6 +93,6 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).render('error', {err})
 })
 
-app.listen(5500,(req,res)=>{
+app.listen(process.env.PORT || 5500,(req,res)=>{
    console.log("Listening on Port 5500!!!")
 })
